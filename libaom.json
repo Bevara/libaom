@@ -1,0 +1,14 @@
+{
+    "name": "libaom",
+    "description": "AV1 video decoder",
+    "filters":["av1dec"],
+    "help": "This filter decodes AV1 video elementary streams using libaom. Pairs with a demuxer (e.g. webmdmx) providing framed AV1 temporal units.",
+    "support": [
+        "video"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libaom.accessor",
+    "filter_source":{
+        "av1dec" : "dec_av1.c"
+    },
+    "licence_required":false
+}

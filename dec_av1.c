@@ -217,7 +217,7 @@ GF_FilterRegister AV1DecoderRegister = {
 	.finalize = av1dec_finalize,
 };
 
-const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_av1dec_register(GF_FilterSession *session)
+const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE av1dec_register(GF_FilterSession *session)
 {
 	return &AV1DecoderRegister;
 }
@@ -225,5 +225,5 @@ const GF_FilterRegister * EMSCRIPTEN_KEEPALIVE dynCall_av1dec_register(GF_Filter
 #include "filter_register.h"
 __attribute__((constructor))
 void register_av1dec(void) {
-    gf_filter_auto_register("av1dec", dynCall_av1dec_register);
+    gf_filter_auto_register("av1dec", av1dec_register);
 }

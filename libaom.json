@@ -10,5 +10,6 @@
     "filter_source":{
         "av1dec" : "dec_av1.c"
     },
-    "licence_required":false
+    "licence_required":false,
+    "Format": ["AV1"]
 }

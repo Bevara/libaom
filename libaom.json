@@ -10,7 +10,11 @@
     "filter_source":{
         "av1dec" : "dec_av1.c"
     },
-    "licence_required":false,
     "Format": ["AV1"],
-    "using": ["solver_1"]
+    "using": ["solver_1"],
+    "patents": {
+        "status": "under-review",
+        "note": "AV1: royalty-free by AOMedia; Sisvel pool claims patents",
+        "checked": "2026-10-16"
+    }
 }

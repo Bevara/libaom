@@ -1,5 +1,6 @@
 {
     "name": "libaom",
+    "version": "1.0.1",
     "description": "AV1 video decoder",
     "filters":["av1dec"],
     "help": "This filter decodes AV1 video elementary streams using libaom. Pairs with a demuxer (e.g. webmdmx) providing framed AV1 temporal units.",
@@ -11,7 +12,7 @@
         "av1dec" : "dec_av1.c"
     },
     "Format": ["AV1"],
-    "using": ["solver_1"],
+    "using": ["mm_solver_1.0.1"],
     "patents": {
         "status": "under-review",
         "note": "AV1: royalty-free by AOMedia; Sisvel pool claims patents",
